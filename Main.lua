@@ -16,7 +16,7 @@ local Game = GetGame()
 
 if Game then
     Supported = true
-    print('https://raw.githubusercontent.com/alfiebgtbhgh/AcidHub/master/'..Game.ScriptName)
+    --print('https://raw.githubusercontent.com/alfiebgtbhgh/AcidHub/master/'..Game.ScriptName)
     Script = game:HttpGet('https://raw.githubusercontent.com/alfiebgtbhgh/AcidHub/master/'..Game.ScriptName)
 end
 
@@ -26,7 +26,7 @@ local Underline = Instance.new("Frame")
 local MainFrame = Instance.new("ImageLabel")
 local TopLine = Instance.new("Frame")
 local GreenLine = Instance.new("Frame")
-local AcidText = Instance.new("TextLabel")
+local Acid = Instance.new("TextLabel")
 local HubText = Instance.new("TextLabel")
 local CloseButton = Instance.new("TextButton")
 local TextButton = Instance.new("TextButton")
@@ -93,18 +93,18 @@ GreenLine.BorderSizePixel = 0
 GreenLine.Position = UDim2.new(0, 0, 1, 0)
 GreenLine.Size = UDim2.new(0, 270, 0, 1)
 
-AcidText.Name = "AcidText"
-AcidText.Parent = TopFrame
-AcidText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-AcidText.BackgroundTransparency = 1.000
-AcidText.Position = UDim2.new(0.0119999638, 0, 0, 0)
-AcidText.Size = UDim2.new(0, 38, 0, 25)
-AcidText.Font = Enum.Font.Gotham
-AcidText.Text = "Acid"
-AcidText.TextColor3 = Color3.fromRGB(255, 255, 255)
-AcidText.TextSize = 15.000
-AcidText.TextWrapped = true
-AcidText.TextXAlignment = Enum.TextXAlignment.Left
+Acid.Name = "Acid"
+Acid.Parent = TopFrame
+Acid.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Acid.BackgroundTransparency = 1.000
+Acid.Position = UDim2.new(0.0119999638, 0, 0, 0)
+Acid.Size = UDim2.new(0, 38, 0, 25)
+Acid.Font = Enum.Font.Gotham
+Acid.Text = "Acid"
+Acid.TextColor3 = Color3.fromRGB(255, 255, 255)
+Acid.TextSize = 15.000
+Acid.TextWrapped = true
+Acid.TextXAlignment = Enum.TextXAlignment.Left
 
 HubText.Name = "HubText"
 HubText.Parent = TopFrame
