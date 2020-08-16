@@ -222,7 +222,7 @@ GameText.TextSize = 16.000
 GameText.TextWrapped = true
 
 if Game then 
-    GameText.Text = Game.GameName
+    GameText.Text = "Game Detected: "..Game.GameName
 else
     GameText.Text = "Not Supported"
 end
