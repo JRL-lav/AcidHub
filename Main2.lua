@@ -21,6 +21,7 @@ if Game then
 end
 
 local Loader = Instance.new("ScreenGui")
+local TopFrame = Instance.new("ImageLabel")
 local Acid = Instance.new("TextLabel")
 local HubText = Instance.new("TextLabel")
 local TextButton = Instance.new("TextButton")
