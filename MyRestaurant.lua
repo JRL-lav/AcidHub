@@ -3,9 +3,7 @@ local library = loadstring(game:HttpGet(('https://pastebin.com/raw/FsJak6AT')))(
 local gui = library:CreateWindow("Acid Hub")
 local folder1 = gui:CreateFolder("Main")
 
-folder1:Button("Copy Discord Link",function()
-    setclipboard("https://discord.gg/Mm9wUAF")
-end)
+folder1:Label("Created by miranda#1875 & YeahDudeThatsNarly#3552")
 
 folder1:Slider("NPC Walkspeed",16,150,true,function(value)
     for i,v in pairs(game:GetService("ReplicatedStorage").Framework.Modules["1 | Directory"].Waiter:GetChildren()) do
