@@ -3,6 +3,10 @@ local library = loadstring(game:HttpGet(('https://pastebin.com/raw/FsJak6AT')))(
 local gui = library:CreateWindow("Acid Hub")
 local folder1 = gui:CreateFolder("Main")
 
+folder1:Button("Copy Discord Link",function()
+    setclipboard("https://discord.gg/Mm9wUAF")
+end)
+
 folder1:Slider("NPC Walkspeed",16,150,true,function(value)
     for i,v in pairs(game:GetService("ReplicatedStorage").Framework.Modules["1 | Directory"].Waiter:GetChildren()) do
         local Module = require(v)
