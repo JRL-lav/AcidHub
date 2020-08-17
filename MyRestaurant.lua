@@ -15,4 +15,9 @@ folder1:Slider("NPC Walkspeed",16,150,true,function(value)
         local Module = require(v)
         Module[string.sub(v.Name, 4, 4)].walkSpeed = value
     end
+    
+    for i,v in pairs(game:GetService("ReplicatedStorage").Framework.Modules["1 | Directory"].Customer:GetChildren()) do
+        local Module = require(v)
+        Module[string.sub(v.Name, 4, 4)].walkSpeed = value
+    end
 end)
